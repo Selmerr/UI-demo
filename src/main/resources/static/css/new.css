@@ -1,0 +1,43 @@
+body {
+    font-family: "Arial Black";
+    color: white;
+}
+.sidebar {
+    height: 100%;
+    width: 15%;
+    background-image: linear-gradient(lightgreen,white,white);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-right: solid black;
+}
+.sidebar a {
+
+    display: block;
+    padding: 16px;
+    color: darkgrey;
+    font-size: 30px;
+    border-top: solid black;
+
+}
+.sidebar h1 {
+    display: block;
+    padding: 16px;
+    font-size: 40px;
+}
+.sidebar a:hover {
+    color: white;
+    background-color: green;
+}
+
+.main {
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left:  15%;
+    width: 100%;
+    padding: 0px 10px;
+    color: black;
+    font-size: 50px;
+}
