@@ -18,19 +18,18 @@ body {
     display: block;
     padding: 16px;
     color: green;
-    font-size: 30px;
+    font-size: 20px;
     border-top: solid black;
 
 }
-.sidebar h1 {
+.sidebar h1 img {
     display: block;
-    padding: 16px;
-    font-size: 40px;
-    left: -120px;
+    width: 50% ;
+
 }
 .sidebar a:hover {
     color: white;
-    background-color: green;
+    background-color: mediumseagreen;
 }
 .dropdown {
     display: inline-block;
