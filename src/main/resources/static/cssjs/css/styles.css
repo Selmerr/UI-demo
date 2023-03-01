@@ -80,8 +80,10 @@ body {
 html{
     width: 100%;
     height: 300%;
-    overflow: hidden;
     scroll-behavior: smooth;
+}
+.frontpage-body{
+    overflow: hidden;
 }
 .box1{
     position: absolute;
@@ -94,7 +96,7 @@ html{
 #product-vision{
     position: absolute;
     margin: 100px;
-    top: 10%;
+    top: 5%;
     font-size: 25px;
     font-style: italic;
     color: black;
@@ -115,9 +117,9 @@ html{
 .page-2-text{
     font-style: italic;
     color: black;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 2%;
 }
 .img-container-1{
@@ -360,4 +362,314 @@ html{
 .img-box3:hover .organisation-user{
     transform: rotateY(-90deg);
     transition: all 0.5s ease-in-out 0s;
+}
+.img-side-text{
+    height: 100%;
+    width: 100%;
+    writing-mode: vertical-rl;
+}
+.side-text-users{
+    background-color: lightblue;
+    text-align: center;
+    height: 300px;
+    position: absolute;
+    left: 6%;
+    top: 5.6%;
+}
+.side-text-company{
+    background-color: lightblue;
+    text-align: center;
+    height: 300px;
+    position: absolute;
+    left: 50.5%;
+    top: 5.6%;
+}
+.side-text-org{
+    background-color: lightblue;
+    text-align: center;
+    height: 300px;
+    position: absolute;
+    left: 6%;
+    top: 54.6%;
+}
+.side-text-members{
+    background-color: lightblue;
+    text-align: center;
+    height: 300px;
+    position: absolute;
+    left: 50.5%;
+    top: 54.6%;
+}
+.user-intro{
+    position: absolute;
+    color: black;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    background: linear-gradient(limegreen, white,  white);
+}
+.user-facts{
+    position: absolute;
+    color: black;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+}
+.user-outro{
+    position: relative;
+    color: black;
+    width: 85%;
+    height: 100%;
+    left: 15%;
+    background: linear-gradient(white , white,  limegreen);
+}
+#user-page2{
+    position: absolute;
+    color: black;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+#user-page3{
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 100%;
+}
+#user-page2 h1{
+    top: 22%;
+    font-family: "Arial Black", serif;
+    font-style: italic;
+    position: absolute;
+    font-size: 17px;
+    right: 1%;
+}
+.user-img-1{
+    position: absolute;
+    display: inline-block;
+    left: 15%;
+}
+.user-img-box1{
+    position: absolute;
+    display: flex;
+    top: 5%;
+    left: 3%;
+    height: 300px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    perspective: 1000px;
+}
+.user-img-box1 .user-box-img1{
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+.user-img-box1:hover .user-box-img1{
+    transform: rotateY(-90deg);
+}
+.user-img-box1 .user-box-img1 img{
+    width: 100%;
+    height: 100%;
+}
+.user-img-box1 .user-content1{
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.user-img-box1:hover .user-content1{
+    transform: rotateY(0);
+}
+.user-img-box1 .user-content1 p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+.user-img-box1 .user-content1 h3 {
+    padding-bottom: 15px;
+}
+.user-img-box2{
+    position: absolute;
+    display: flex;
+    top: 51%;
+    left: 55%;
+    height: 300px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    perspective: 1000px;
+}
+.user-img-box2 .user-box-img2{
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+.user-img-box2:hover .user-box-img2{
+    transform: rotateY(-90deg);
+}
+.user-img-box2 .user-box-img2 img{
+    width: 100%;
+    height: 100%;
+}
+.user-img-box2 .user-content2{
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.user-img-box2:hover .user-content2{
+    transform: rotateY(0);
+}
+.user-img-box2 .user-content2 p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+.user-img-box2 .user-content2 h3 {
+    padding-bottom: 15px;
+}
+.user-box-text-left{
+    position: absolute;
+    width: 50%;
+    left: 45%;
+    top: 10%;
+    font-size: 13px;
+    font-style: italic;
+}
+.user-box-text-right{
+    position: absolute;
+    width: 50%;
+    top: 60%;
+    left: 5%;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.tips{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-size: 15px;
+}
+.links-to-help{
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    font-size: 15px;
+    font-style: italic;
+}
+.tips li{
+    left: 5%;
+    top: 30%;
+}
+.madspild-link-1{
+    position: absolute;
+    right: 12%;
+    top: 12%;
+}
+.madspild-link-2{
+    position: absolute;
+    right: 14.5%;
+    top: 63%;
+}
+.madspild-link-3{
+    position: absolute;
+    right: 12%;
+    top: 38%;
+}
+.background{
+    position: absolute;
+    width: 85%;
+    left: 15%;
+    height: 100%;
+    background: linear-gradient(limegreen, white, white);
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 58%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid grey;
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Arial Black',sans-serif;
+    color: black;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border: solid black;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: lightblue;
+    color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+.social div{
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+}
+.social .fb{
+    margin-left: 25px;
+}
+.social i{
+    margin-right: 4px;
 }
