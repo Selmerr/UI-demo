@@ -11,6 +11,6 @@ public class MyController {
     }
     @GetMapping("/private_user")
     public String private_user(){
-        return "private_user";
+        return "forbrugere";
     }
 }

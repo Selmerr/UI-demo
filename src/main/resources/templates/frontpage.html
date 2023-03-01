@@ -5,45 +5,49 @@
     <title>Danmark mod madspild</title>
     <link rel="stylesheet" href="../static/cssjs/css/styles.css" th:href="@{/cssjs/css/styles.css}">
 </head>
-<body>
+<body class="frontpage-body">
 <div id="leftBox">
 </div>
 <div id="frontpages">
 <section class="section" id="page1">
-    <a href="#page2" class="hlp2" th:href="@{#page2}"><div class="box1">
-        <div class="logobox">
-        <img src="../static/images/logo.png" th:src="@{/images/logo.png}" alt="">
+    <a href="#page2" class="hlp2" th:href="@{#page2}">
+        <div class="box1">
+            <div class="logobox">
+                <img src="../static/images/logo.png" th:src="@{/images/logo.png}" alt="">
+            </div>
+            <h1 id="product-vision">”MADSPILD STÅR FOR SAMLET SET 1,8 MIO. TONS CO2, SVARENDE TIL GODT 3 PCT. AF DANMARKS
+           SAMLEDE CO2-AFTRYK. DET SAMLEDE VÆRDITAB FOR MADSPILD ER PÅ 8,4 MIA. KR. OM ÅRET, HVOR DE 5,3 MIA. KR. ENDER
+           I HUSHOLDNINGENS SKRALDESPAND.”<br><br>"DANMARK MOD MADSPILD ER EN FRIVILLIG AFTALE FOR VIRKSOMHEDER OG
+           ORGANISATIONER, DER HAR SOM MÅL AT HALVERE MADSPILDET INDEN 2030, OG REDUCERE FØDEVARETABET I DEN DANSKE
+           FØDEVAREBRANCHE."<br><br> "INITIATIVET HAR SIT AFSÆT I FN'S VERDENSMÅL 12.3 FOR BÆREDYGTIG UDVIKLING, HVOR DET
+           GLOBALE MADAFFALD, INKL. MADSPILD PR. INDBYGGER SKAL HALVERES INDEN 2030 OG FØDEVARETABET REDUCERES."</h1>
         </div>
-       <h1 id="product-vision">"Text to show your product vision boiled down
-           into a smaller segment, so you can catch the viewers interests. This field should be use as an
-           opener, so use your most boiled down product vision oneliner that you can find."
-           <br><br>
-           "Text to show your product vision boiled down into a smaller segment, so you can catch the viewers interests.
-           This field should be use as an opener, so use your most boiled down product vision oneliner that you can find."
-           <br><br>
-           "Text to show your product vision boiled down into a smaller segment, so you can catch the viewers interests.
-           This field should be use as an opener, so use your most boiled down product vision oneliner that you can find."</h1>
-    </div></a>
+    </a>
 </section>
 <section class="section" id="page2">
     <div class="img-container-1">
         <a href="#page3" class="hlp3" th:href="@{#page3}"><img id="frontimage" src="../static/images/frontpage.png" th:src="@{/images/frontpage.png}" alt="load-page-image"></a>
         <div class="page-2-text">
-            <h1>Interesting text about members.<br>Help people understanding benefits.</h1>
+            <h1>Vores frivillige medlemmer bringer ekspertise<br> og know-how til vores kamp mod madspild.</h1>
         </div>
     </div>
 </section>
 <section class="section" id="page3">
     <div class="img-container-2">
+        <div class="img-side-text">
+            <h1 class="side-text-users">Forbrugere</h1>
+            <h1 class="side-text-company">Virksomheder</h1>
+            <h1 class="side-text-org">Organisationer</h1>
+            <h1 class="side-text-members">Medlemmer</h1>
+        </div>
         <div class="img-box1">
             <div class="box-img1">
                 <img class="animation" src="../static/images/foodwaste1.jpg" th:src="@{/images/foodwaste1.jpg}" alt="image1">
             </div>
             <div class="content1">
                 <h1>Forbrugere</h1>
-                <p>Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts</p>
+                <p>Madspilet i de danske husholdninger udgør <br> 261.000-ton pr. år. <br>
+                    Til sammenligning er det samlede madspild fra servicesektoren 227.000-ton pr. år.</p>
                 <a href="frontpage.html" th:href="@{/frontpage}"><p2><br>Se mere</p2></a>
             </div>
         </div>
@@ -53,9 +57,8 @@
             </div>
             <div class="content2">
                 <h1>Virksomheder</h1>
-                <p>Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts</p>
+                <p>Det største madspild i servicesektoren stammer fra detailhandelen.<br>Detailhandelen spilder 163.000 tons pr.
+                    år, svarende til 72 % af servicesektorens madspild.</p>
                 <a href="frontpage.html" th:href="@{/frontpage}"><p2><br>Se mere</p2></a>
             </div>
         </div>
@@ -65,9 +68,9 @@
             </div>
             <div class="content3">
                 <h1>Organisationer</h1>
-                <p>Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
-                    Interesting facts Interesting facts</p>
+                <p>Af detailhandelens madspild står specialforretninger for 12.000 tons pr. år,
+                    mens ikke-specialiserede forretninger som kiosker,
+                    købmænd, supermarkeder og varehuse står for 151.000-ton pr. år</p>
                 <a href="frontpage.html" th:href="@{/frontpage}"><p2><br>Se mere</p2></a>
             </div>
         </div>
