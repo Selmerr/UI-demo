@@ -153,14 +153,12 @@ html{
     height: 100%;
 }
 .img-box1{
-    position: relative;
-    display: inline-block;
-    top: 15%;
+    margin: 40px 50px 50px 120px;
+    position: absolute;
+    display: flex;
     height: 300px;
     width: 450px;
-    margin: 30px 0 0 5px;
     perspective: 1000px;
-    border-radius: 25px;
 }
 .img-box1 .box-img1{
     transform: rotateY(0);
@@ -196,13 +194,13 @@ html{
     padding: 20px;
 }
 .img-box2{
-    position: relative;
-    display: inline-block;
-    top: 25%;
+    position: absolute;
+    display: flex;
     height: 300px;
     width: 450px;
-    margin: 30px 0 0 5px;
+    left: 50%;
     perspective: 1000px;
+    margin: 40px 50px 50px;
 }
 .img-box2 .box-img2{
     transform: rotateY(0);
@@ -238,12 +236,14 @@ html{
     padding: 20px;
 }
 .img-box3{
-    position: relative;
-    display: inline-block;
-    top: 35%;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    display: flex;
+    top: 51%;
     height: 300px;
     width: 450px;
-    margin: 30px 0 0 5px;
     perspective: 1000px;
 }
 .img-box3 .box-img3{
@@ -282,6 +282,54 @@ html{
 .img-box3 .content1 h3 {
     padding-bottom: 15px;
 }
+.img-box4{
+    position: absolute;
+    display: flex;
+    top: 51%;
+    left: 50%;
+    height: 300px;
+    width: 450px;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    perspective: 1000px;
+}
+.img-box4 .box-img4{
+    transform: rotateY(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box4:hover .box-img4{
+    transform: rotateY(-90deg);
+}
+.img-box4 .box-img4 img{
+    width: 100%;
+    height: 100%;
+}
+.img-box4 .content4{
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    transform: rotateY(90deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.img-box4:hover .content4{
+    transform: rotateY(0);
+}
+.img-box4 .content4 p{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+.img-box4 .content1 h3 {
+    padding-bottom: 15px;
+}
 .private-user{
     text-align: center;
     font-family: "Arial Black", serif;
@@ -311,21 +359,4 @@ html{
 .img-box3:hover .organisation-user{
     transform: rotateY(-90deg);
     transition: all 0.5s ease-in-out 0s;
-}
-.topmenu{
-    position: fixed;
-    width: 85%;
-    height: 7%;
-    left: 15%;
-    border: solid black;
-}
-.topmenu-private_user{
-    width: 24%;
-    height: 100%;
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    background-color: orange;
-    border: solid black;
-
 }
