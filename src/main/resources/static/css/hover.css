@@ -1,37 +1,74 @@
-/* Style the links inside the sidenav */
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+body {
+    font-family: "Arial Black";
+    color: white;
+}
+.sidebar {
+    height: 100%;
+    width: 15%;
+    background-image: linear-gradient(lightgreen,white,white);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-right: solid black;
+}
+.sidebar a {
+
+    display: block;
+    padding: 16px;
+    color: green;
+    font-size: 30px;
+    border-top: solid black;
+
+}
+.sidebar h1 {
+    display: block;
+    padding: 16px;
+    font-size: 40px;
+    left: -120px;
+}
+.sidebar a:hover {
+    color: white;
+    background-color: green;
+}
+.dropdown {
+    display: inline-block;
+    position: fixed;
+    text-align: center;
+    left: 15%;
+    top: 0%;
 }
 
-#mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: green;
+    color: white;
+    z-index: 1;
+    width: 100%;
+}
+.dropdown-content a {
+    float: left;
+    width: 21.25%;
+    border-right: solid black;
+}
+#dropdown-arrow {
+    margin-left: 1000%;
+    border: solid black;
 }
 
-/* The about link: 20px from the top with a green background */
-#about {
-    top: 20px;
-    background-color: #04AA6D;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-#blog {
-    top: 80px;
-    background-color: #2196F3; /* Blue */
-}
 
-#projects {
-    top: 140px;
-    background-color: #f44336; /* Red */
-}
-
-#contact {
-    top: 200px;
-    background-color: #555 /* Light Black */
+.main {
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin-left:  15%;
+    width: 100%;
+    padding: 0px 10px;
+    color: black;
+    font-size: 50px;
 }
