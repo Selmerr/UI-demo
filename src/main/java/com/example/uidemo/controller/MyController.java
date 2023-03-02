@@ -9,8 +9,12 @@ public class MyController {
     public String frontpage(){
         return "frontpage";
     }
-    @GetMapping("/private_user")
+    @GetMapping("/forbrugere")
     public String private_user(){
         return "forbrugere";
+    }
+    @GetMapping("/medlemmer")
+    public String medlemmer() {
+        return "medlemmer";
     }
 }

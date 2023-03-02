@@ -8,23 +8,26 @@
 <body class="frontpage-body">
 <div id="leftBox">
     <div class="sidebar">
-        <h1>
-            <img src="../static/images/dmm-logo-green.svg">
+        <h1 style="border-bottom: solid grey">
+            <a href="#page3" class="hlp3" th:href="@{#page3}"><img src="../static/images/dmm-logo-green.svg"></a>
         </h1>
+        <br>
         <a>Forbruger</a>
         <a>Virksomheder</a>
         <a>Organisationer</a>
         <a>Medlemmer</a>
+        <div id="QA">
+            <a>Om os</a>
+            <a>Kontakt os</a>
+            <a>Q&A</a>
+        </div>
+        <div id="kontakt">
+            <p> Følg os</p>
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
 
-    </div>
-    <div class="dropdown">
-        <a>Forbruger</a>
-        <a>Virksomheder</a>
-        <a>Organisationer</a>
-        <a>Medlemmer</a>
-        <img src="../static/images/pngegg.png" id="dropdown-arrow"
-             width="20px"
-             height="20px">
+        </div>
     </div>
 </div>
 <div id="frontpages">
@@ -103,11 +106,21 @@
                 <p>Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
                     Interesting facts Interesting facts Interesting facts Interesting facts Interesting facts
                     Interesting facts Interesting facts</p>
-                <a href="frontpage.html" th:href="@{/frontpage}"><p2><br>Se mere</p2></a>
+                <a href="medlemmer.html" th:href="@{/medlemmer.html}"><p2><br>Se mere</p2></a>
             </div>
         </div>
     </div>
 </section>
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="#page1" th:href="@{#page1}"> Produkt Vision</a>
+            <a href="#page2" th:href="@{#page2}"> Medlemsoversigt</a>
+            <a href="#page3" th:href="@{#page3}"> Navigation</a>
+        </div>
+        <img src="../static/images/pngegg.png" id="dropdown-arrow"
+             width="20px"
+             height="20px">
+    </div>
 </div>
 </body>
 </html>
