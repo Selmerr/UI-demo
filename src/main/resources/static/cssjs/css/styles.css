@@ -617,7 +617,12 @@ html{
     position: absolute;
     left: 10%;
     top: 25%;
+    text-align: center;
+    width: 600px;
+    height: 350px;
     font-size: 15px;
+    border: solid limegreen;
+    border-radius: 7px;
 }
 .links-to-help{
     position: absolute;
