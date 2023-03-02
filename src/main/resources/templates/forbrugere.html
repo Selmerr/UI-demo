@@ -9,13 +9,14 @@
 <div id="leftBox">
     <div class="sidebar">
         <h1 style="border-bottom: solid grey">
-            <a href="#page3" class="hlp3" th:href="@{#page3}"><img src="../static/images/dmm-logo-green.svg"></a>
+            <a href="/#page3" class="hlp3" th:href="@{/#page3}"><img src="../static/images/dmm-logo-green.svg"
+                                                                   th:src="@{/images/dmm-logo-green.svg}"></a>
         </h1>
         <br>
-        <a>Forbruger</a>
+        <a href="/templates/forbrugere.html" class="hlp3" th:href="@{/forbrugere}" style="text-decoration: none">Forbruger</a>
         <a>Virksomheder</a>
         <a>Organisationer</a>
-        <a>Medlemmer</a>
+        <a href="/templates/medlemmer.html" class="hlp3" th:href="@{/medlemmer}" style="text-decoration: none">Medlemmer</a>
         <div id="QA">
             <a>Om os</a>
             <a>Kontakt os</a>
@@ -23,9 +24,12 @@
         </div>
         <div id="kontakt">
             <p> Følg os</p>
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
 
         </div>
     </div>
@@ -94,7 +98,7 @@
             </p>
         </div>
         <div class="user-img-1">
-            <img src="../static/images/forbrugerbillede.png"
+            <img src="../static/images/forbrugerbillede.png" th:src="@{/images/forbrugerbillede.png}"
             style="margin-left:100px"
             width="500px"
             height="600px">
@@ -133,7 +137,7 @@
         <a href="#user-page2" th:href="@{#user-page2}"> Oversigt</a>
         <a href="#user-page3" th:href="@{#user-page3}"> Tips & Navigation</a>
     </div>
-    <img src="../static/images/pngegg.png" id="dropdown-arrow"
+    <img src="../static/images/pngegg.png" id="dropdown-arrow" th:src="@{/images/pngegg.png}"
          width="20px"
          height="20px">
 </div>

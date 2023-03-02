@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
     <title>Danmark mod madspild</title>
     <link rel="stylesheet" href="../static/cssjs/css/styles.css" th:href="@{/cssjs/css/styles.css}">
 </head>
@@ -9,13 +9,14 @@
 <div id="leftBox">
     <div class="sidebar">
         <h1 style="border-bottom: solid grey">
-            <a href="#page3" class="hlp3" th:href="@{#page3}"><img src="../static/images/dmm-logo-green.svg"></a>
+            <a href="#page3" class="hlp3" th:href="@{/#page3}"><img src="../static/images/dmm-logo-green.svg"
+                                                                   th:src="@{/images/dmm-logo-green.svg}"></a>
         </h1>
         <br>
-        <a>Forbruger</a>
+        <a href="/templates/forbrugere.html" class="hlp3" th:href="@{/forbrugere}" style="text-decoration: none">Forbruger</a>
         <a>Virksomheder</a>
         <a>Organisationer</a>
-        <a>Medlemmer</a>
+        <a href="/templates/medlemmer.html" class="hlp3" th:href="@{/medlemmer}" style="text-decoration: none">Medlemmer</a>
         <div id="QA">
             <a>Om os</a>
             <a>Kontakt os</a>
@@ -23,9 +24,12 @@
         </div>
         <div id="kontakt">
             <p> Følg os</p>
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
-            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
 
         </div>
 </div>
