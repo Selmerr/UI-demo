@@ -8,36 +8,48 @@
 <body>
 <div id="leftBox">
     <div class="sidebar">
-        <h1>
+        <h1 style="border-bottom: solid grey">
             <a href="#page3" class="hlp3" th:href="@{#page3}"><img src="../static/images/dmm-logo-green.svg"></a>
         </h1>
+        <br>
         <a>Forbruger</a>
         <a>Virksomheder</a>
         <a>Organisationer</a>
         <a>Medlemmer</a>
+        <div id="QA">
+            <a>Om os</a>
+            <a>Kontakt os</a>
+            <a>Q&A</a>
+        </div>
+        <div id="kontakt">
+            <p> Følg os</p>
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png">
 
+        </div>
     </div>
 </div>
-
 <div class="user-main">
     <section class ="section" id="user-page1">
         <div class="user-intro">
             <div class="user-box-text-left">
-                <h1>"Hver dansker smider i gennemsnit 63 kilo mad i <br> skraldespanden3.
+                <p>"Hver dansker smider i gennemsnit 63 kilo mad i <br> skraldespanden3.
                     Hvis vi deler det ud på årets 365 dage, bliver det ca. 172 gram om dagen.<br>
                     Det svarer ca. til to bananer eller 2-3 gulerødder, en rest pasta eller tre
                     kartofler eller en bøf.<br><br> Det er ikke meget, der skal til hver dag for at undgå<br>
-                    de 63 kilo spildt mad om året. Hvis du starter i det små, ender du med store resultater."</h1>
+                    de 63 kilo spildt mad om året. Hvis du starter i det små, ender du med store resultater."</p>
             </div>
             <div class="user-box-text-right">
-                <h1>"En bæredygtig livsstil kan virke som en kompleks opgave, for der er mange ting at
+                <p>"En bæredygtig livsstil kan virke som en kompleks opgave, for der er mange ting at
                     forholde sig til, hvis man vil leve, spise og handle mere bæredygtigt."<br><br> "Men måske
                     behøver man ikke ændre alt på én gang. Et sted, man med fordel kan starte, er
-                    ved at reducere sit madspild."</h1>
+                    ved at reducere sit madspild."</p>
             </div>
             <div class="user-img-box1">
                 <div class="user-box-img1">
-                    <img class="animation" src="../static/images/facts1.png" th:src="@{/images/facts1.png}" alt="user-image1">
+                    <img class="animation" src="../static/images/facts1.png" th:src="@{/images/facts1.png}" alt="user-image1"
+                    style="border-radius:20px">
                 </div>
                 <div class="user-content1">
                     <h1>Så meget smider vi ud!</h1>
@@ -49,7 +61,8 @@
             </div>
             <div class="user-img-box2">
                 <div class="user-box-img2">
-                    <img class="animation" src="../static/images/facts2.png" th:src="@{/images/facts2.png}" alt="user-image1">
+                    <img class="animation" src="../static/images/facts2.png" th:src="@{/images/facts2.png}" alt="user-image1"
+                         style="border-radius:20px">
                 </div>
                 <div class="user-content2">
                     <h1>Ja! Det kan man!</h1>
@@ -62,7 +75,8 @@
         </div>
     </section>
     <section class="section" id="user-page2">
-        <h1>"Mange danskere vil gerne leve mere bæredygtigt. <br>
+        <div class="user-page2-text">
+            <p>"Mange danskere vil gerne leve mere bæredygtigt. <br>
             Et vigtigt skridt på vejen er at mindske madspild."<br>
             <br><br>
             "Madspild er nemlig en af de helt store syndere i <br>
@@ -77,9 +91,13 @@
             spilder mindre mad, skal der produceres mindre mad, og<br>
             dermed mindskes udledningen af drivhusgasser fra<br>
             fødevareproduktionen."<br>
-        </h1>
+            </p>
+        </div>
         <div class="user-img-1">
-            <img src="../static/images/forbrugerbillede.png">
+            <img src="../static/images/forbrugerbillede.png"
+            style="margin-left:100px"
+            width="500px"
+            height="600px">
         </div>
         <div class="user-facts">
         </div>
@@ -111,9 +129,9 @@
 </div>
 <div class="dropdown">
     <div class="dropdown-content">
-        <a href="#user-page1" th:href="@{#user-page1}"> Produkt Vision</a>
-        <a href="#user-page2" th:href="@{#user-page2}"> Medlemsoversigt</a>
-        <a href="#user-page3" th:href="@{#user-page3}"> Navigation</a>
+        <a href="#user-page1" th:href="@{#user-page1}" style="border-left: solid black"> Intro forbruger</a>
+        <a href="#user-page2" th:href="@{#user-page2}"> Oversigt</a>
+        <a href="#user-page3" th:href="@{#user-page3}"> Tips & Navigation</a>
     </div>
     <img src="../static/images/pngegg.png" id="dropdown-arrow"
          width="20px"

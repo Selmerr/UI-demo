@@ -6,14 +6,14 @@ body {
 .sidebar {
     height: 100%;
     width: 15%;
-    background-color: rgba(243, 241, 241, 0.93);
+    background-color: rgb(217, 217, 217);
     /*background-color: rgba(3, 136, 3, 0.16);;*/
     /*background-image: repeating-radial-gradient(white,lightgreen,lightgreen);*/
     position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
-    border-right: solid rgba(114, 112, 112, 0.42);
+    border-right: solid rgba(23, 22, 22, 0.42);
     text-align: left;
 
 }
@@ -24,10 +24,11 @@ body {
     color: black;
     font-size: 15px;
     margin-left: 20px;
-    border-bottom: solid rgba(128, 128, 128, 0.37);
+    border-bottom: solid rgba(0, 0, 0, 0.78);
     margin-right: 20px;
     border-radius: 10px;
     border-right: solid black;
+    background-color: rgba(236, 233, 233, 0.99);
 
 }
 
@@ -65,18 +66,17 @@ body {
     width: 50%;
     transition:visibility 0.2s, linear, opacity 0.2s linear;
     left: 33%;
-    background-color: grey;
+    background-color: white;
     border-radius: 10px;
 }
 .dropdown-content a {
     float: left;
     width: 33.3%;
-    border-right: solid rgba(0, 0, 0, 0.32);
+    border-right: solid black;
     color: black;
     left: 50%;
 }
 #dropdown-arrow {
-    border: solid black;
 }
 
 .dropdown:hover .dropdown-content {
@@ -87,7 +87,7 @@ body {
     margin-top: 60px;
 }
 #kontakt {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 #kontakt p{
     color: black;
@@ -134,14 +134,18 @@ html{
 
 }
 #product-vision{
+    height: 400px;
+    width: 1100px;
     position: absolute;
     margin: 100px;
     top: 5%;
-    font-size: 25px;
+    font-size: 23px;
     font-style: italic;
     color: black;
     font-family: "Arial Black", serif;
     text-decoration: none;
+    border: solid limegreen;
+    border-radius: 20px;
 }
 .logobox{
     position: absolute;
@@ -156,11 +160,14 @@ html{
 }
 .page-2-text{
     font-style: italic;
+    width: 670px;
     color: black;
     font-size: 17px;
     position: absolute;
     right: 2%;
     bottom: 2%;
+    border: solid limegreen;
+    border-radius: 7px;
 }
 .img-container-1{
     position: absolute;
@@ -445,7 +452,6 @@ html{
     width: 85%;
     height: 100%;
     left: 15%;
-    background: linear-gradient(limegreen, white,  white);
 }
 .user-facts{
     position: absolute;
@@ -455,19 +461,24 @@ html{
     left: 15%;
 }
 .user-outro{
-    position: relative;
+    position: absolute;
     color: black;
     width: 85%;
     height: 100%;
     left: 15%;
-    background: linear-gradient(white , white,  limegreen);
 }
 #user-page2{
     position: absolute;
     color: black;
-    top: 100%;
+    top: 110%;
     width: 100%;
     height: 100%;
+}
+.user-page2-text{
+    position: absolute;
+    width: 35%;
+    left: 60%;
+    top: 8%;
 }
 #user-page3{
     position: absolute;
@@ -475,13 +486,13 @@ html{
     width: 100%;
     height: 100%;
 }
-#user-page2 h1{
-    top: 22%;
+#user-page2 p{
     font-family: "Arial Black", serif;
-    font-style: italic;
     position: absolute;
     font-size: 17px;
     right: 1%;
+    border: solid limegreen;
+    border-radius: 7px;
 }
 .user-img-1{
     position: absolute;
@@ -492,7 +503,7 @@ html{
     position: absolute;
     display: flex;
     top: 5%;
-    left: 3%;
+    left: 3.01%;
     height: 300px;
     width: 450px;
     margin-top: 25px;
@@ -516,7 +527,6 @@ html{
     background-color: rgba(0,0,0,0.8);
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -586,19 +596,21 @@ html{
 }
 .user-box-text-left{
     position: absolute;
-    width: 50%;
+    width: 53%;
     left: 45%;
     top: 10%;
-    font-size: 13px;
-    font-style: italic;
+    font-size: 20px;
+    border: solid limegreen;
+    border-radius: 8px;
 }
 .user-box-text-right{
     position: absolute;
     width: 50%;
     top: 60%;
-    left: 5%;
-    font-size: 13px;
-    font-style: italic;
+    left: 7%;
+    font-size: 20px;
+    border: solid limegreen;
+    border-radius: 8px;
 }
 
 .tips{
@@ -625,7 +637,7 @@ html{
 }
 .madspild-link-2{
     position: absolute;
-    right: 14.5%;
+    right: 15%;
     top: 63%;
 }
 .madspild-link-3{
@@ -638,16 +650,15 @@ html{
     width: 85%;
     left: 15%;
     height: 100%;
-    background: linear-gradient(limegreen, white, white);
 }
 form{
     height: 520px;
     width: 400px;
-    background-color: white;
+    background-color: rgb(217, 217, 217);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
-    left: 58%;
+    left: 75%;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     border: 2px solid grey;
@@ -686,7 +697,7 @@ input{
 button{
     margin-top: 50px;
     width: 100%;
-    background-color: lightblue;
+    background-color: cornflowerblue;
     color: black;
     padding: 15px 0;
     font-size: 18px;
@@ -702,7 +713,7 @@ button{
     width: 150px;
     border-radius: 3px;
     padding: 5px 10px 10px 5px;
-    background-color: lightblue;
+    background-color: dodgerblue;
     color: black;
     text-align: center;
 }
@@ -711,4 +722,78 @@ button{
 }
 .social i{
     margin-right: 4px;
+}
+.medlemmer-body{
+    height: 100%;
+    overflow: hidden;
+}
+.form2{
+    height: 520px;
+    width: 400px;
+    background-color: rgb(217, 217, 217);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 40%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid grey;
+    padding: 50px 35px;
+}
+.form2 h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.form2 label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.form2 input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border: solid black;
+}
+.form2 button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: cornflowerblue;
+    color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form2 .social{
+    margin-top: 30px;
+    display: flex;
+}
+.form2 .social div{
+    width: 150px;
+    border-radius: 3px;
+    padding: 5px 10px 10px 5px;
+    background-color: dodgerblue;
+    color: black;
+    text-align: center;
+}
+.form2 .social .fb{
+    margin-left: 25px;
+}
+.form2 .social i{
+    margin-right: 4px;
+}
+.form2 .medlemmer-body{
+    height: 100%;
+    overflow: hidden;
 }

@@ -5,7 +5,7 @@
     <title>Danmark mod madspild</title>
     <link rel="stylesheet" href="../static/cssjs/css/styles.css" th:href="@{/cssjs/css/styles.css}">
 </head>
-<body>
+<body class="medlemmer-body">
 <div id="leftBox">
     <div class="sidebar">
         <h1 style="border-bottom: solid grey">
@@ -29,29 +29,32 @@
 
         </div>
 </div>
-    <div class="dropdown">
-    <a>Forbruger</a>
-    <a>Virksomheder</a>
-    <a>Organisationer</a>
-    <a>Medlemmer</a>
-    <img src="../static/images/pngegg.png" id="dropdown-arrow"
-         width="20px"
-         height="20px">
-    </div>
 </div>
 <div class="background">
 </div>
 <form>
-  <h3>Login</h3>
+  <h3>Signup</h3>
   <label for="username">Brugernavn</label>
-  <input type="text" id="username">
+  <input type="text" class="username">
   <label for="password">Password</label>
-  <input type="password" id="password">
-  <button>Log In</button>
+  <input type="password" class="password">
+  <button>Signup</button>
   <div class="social">
     <div class="go"><i class="fab fa-google"></i>  Google</div>
     <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
   </div>
+</form>
+<form class="form2">
+    <h3>Login</h3>
+    <label for="username">Brugernavn</label>
+    <input type="text" id="username">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <button>Log In</button>
+    <div class="social">
+        <div class="go"><i class="fab fa-google"></i>  Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+    </div>
 </form>
 </body>
 </html>
