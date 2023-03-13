@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>Danmark mod madspild</title>
+    <link rel="stylesheet" href="../static/cssjs/css/styles.css" th:href="@{/cssjs/css/styles.css}">
+</head>
+<body>
+<div id="leftBox">
+    <div class="sidebar">
+        <h1 style="border-bottom: solid grey">
+            <a href="/#page3" class="hlp3" th:href="@{/#page3}"><img src="../static/images/dmm-logo-green.svg"
+                                                                   th:src="@{/images/dmm-logo-green.svg}"></a>
+        </h1>
+        <br>
+        <a href="/templates/forbrugere.html" class="hlp3" th:href="@{/forbrugere}" style="text-decoration: none">Forbruger</a>
+        <a>Virksomheder</a>
+        <a>Organisationer</a>
+        <a href="/templates/medlemmer.html" class="hlp3" th:href="@{/medlemmer}" style="text-decoration: none">Medlemmer</a>
+        <div id="QA">
+            <a>Om os</a>
+            <a>Kontakt os</a>
+            <a>Q&A</a>
+        </div>
+        <div id="kontakt">
+            <p> Følg os</p>
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/twitter-logo.png"
+                 th:src="@{/images/twitter-logo.png}">
+            <img src="../static/images/instagram-logo.png"
+                 th:src="@{/images/instagram-logo.png}">
+
+        </div>
+    </div>
+</div>
+<div class="user-main">
+    <section class ="section" id="user-page1">
+        <div class="user-intro">
+            <div class="user-box-text-left">
+                <p>"Hver dansker smider i gennemsnit 63 kilo mad i <br> skraldespanden3.
+                    Hvis vi deler det ud på årets 365 dage, bliver det ca. 172 gram om dagen.<br>
+                    Det svarer ca. til to bananer eller 2-3 gulerødder, en rest pasta eller tre
+                    kartofler eller en bøf.<br><br> Det er ikke meget, der skal til hver dag for at undgå<br>
+                    de 63 kilo spildt mad om året. Hvis du starter i det små, ender du med store resultater."</p>
+            </div>
+            <div class="user-box-text-right">
+                <p>"En bæredygtig livsstil kan virke som en kompleks opgave, for der er mange ting at
+                    forholde sig til, hvis man vil leve, spise og handle mere bæredygtigt."<br><br> "Men måske
+                    behøver man ikke ændre alt på én gang. Et sted, man med fordel kan starte, er
+                    ved at reducere sit madspild."</p>
+            </div>
+            <div class="user-img-box1">
+                <div class="user-box-img1">
+                    <img class="animation" src="../static/images/facts1.png" th:src="@{/images/facts1.png}" alt="user-image1"
+                    style="border-radius:20px">
+                </div>
+                <div class="user-content1">
+                    <h1>Så meget smider vi ud!</h1>
+                    <br>
+                    <p>Hvert år smider vi i Danmark over 700.000 ton mad ud.<br>
+                    651.000 ton er fra privat og service sektoren.<br>
+                    Resten er fra institutioner og stor køkkener.</p>
+                </div>
+            </div>
+            <div class="user-img-box2">
+                <div class="user-box-img2">
+                    <img class="animation" src="../static/images/facts2.png" th:src="@{/images/facts2.png}" alt="user-image1"
+                         style="border-radius:20px">
+                </div>
+                <div class="user-content2">
+                    <h1>Ja! Det kan man!</h1>
+                    <p>Man kan som forbrugere blandt andet<br>
+                    udnytte koncepter som Too good to go.
+                    Det er et koncept der hjælper med at<br>
+                    sørge for gammelt mad ikke bliver smidt ud.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="user-page2">
+        <div class="user-page2-text">
+            <p>"Mange danskere vil gerne leve mere bæredygtigt. <br>
+            Et vigtigt skridt på vejen er at mindske madspild."<br>
+            <br><br>
+            "Madspild er nemlig en af de helt store syndere i <br>
+            klimaregnskabet, og vi forbrugere står for et større<br>
+            madspild end både detailhandlen og produktionen."<br>
+            <br><br>
+            "Ifølge en rapport fra Aarhus Universitet og DTU betyder<br>
+            vores samlede daglige madspild, at klimaaftrykket øges<br>
+            med 14 procent pr. person."<br><br><br>
+            "Der vil med andre ord være en stor klimamæssig gevinst<br>
+            ved at mindske vores madspild ud fra devicen; hvis vi<br>
+            spilder mindre mad, skal der produceres mindre mad, og<br>
+            dermed mindskes udledningen af drivhusgasser fra<br>
+            fødevareproduktionen."<br>
+            </p>
+        </div>
+        <div class="user-img-1">
+            <img src="../static/images/forbrugerbillede.png" th:src="@{/images/forbrugerbillede.png}"
+            style="margin-left:100px"
+            width="500px"
+            height="600px">
+        </div>
+        <div class="user-facts">
+        </div>
+    </section>
+    <section class="section" id="user-page3">
+        <div class="user-outro">
+            <div class="tips">
+                <h1>6 konkrete tips til at stoppe madspild:</h1><br><br>
+                <li>Lav en madplan</li><br>
+                <li>Lav indkøbsseddel og køb ind til flere dage ad gangen</li><br>
+                <li>Køb ikke mere end du skal bruge</li><br>
+                <li>Gem rester i køleskabet eller fryseren</li><br>
+                <li>Brug dine rester – kun fantasien sætter grænser</li><br>
+                <li>Vær opmærksom på holdbarheden</li>
+            </div>
+            <div class="madspild-link-1">
+                <img class="animation" src="../static/images/togoodtogo.png" th:src="@{/images/togoodtogo.png}" alt="user-image1"
+                width="250" height="150">
+            </div>
+            <div class="madspild-link-2">
+                <img class="animation" src="../static/images/refood.png" th:src="@{/images/refood.png}" alt="user-image1">
+            </div>
+            <div class="madspild-link-3">
+                <img class="animation" src="../static/images/downloadredskaber.png" th:src="@{/images/downloadredskaber.png}" alt="user-image1"
+                width="250" height="150">
+            </div>
+        </div>
+    </section>
+</div>
+<div class="dropdown">
+    <div class="dropdown-content">
+        <a href="#user-page1" th:href="@{#user-page1}" style="border-left: solid black"> Intro forbruger</a>
+        <a href="#user-page2" th:href="@{#user-page2}"> Oversigt</a>
+        <a href="#user-page3" th:href="@{#user-page3}"> Tips & Navigation</a>
+    </div>
+    <img src="../static/images/pngegg.png" id="dropdown-arrow" th:src="@{/images/pngegg.png}"
+         width="20px"
+         height="20px">
+</div>
+</body>
+</html>

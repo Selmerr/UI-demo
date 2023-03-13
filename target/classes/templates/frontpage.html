@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mathias og Mikkel opgave -->
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>Danmark mod madspild</title>
+    <link rel="stylesheet" href="../static/cssjs/css/styles.css" th:href="@{/cssjs/css/styles.css}">
+</head>
+<body class="frontpage-body">
+<div id="leftBox">
+    <div class="sidebar">
+        <h1 style="border-bottom: solid grey">
+            <a href="#page3" class="hlp3" th:href="@{#page3}"><img src="../static/images/dmm-logo-green.svg"
+                                                                   th:src="@{/images/dmm-logo-green.svg}"></a>
+        </h1>
+        <br>
+        <a href="/templates/forbrugere.html" class="hlp3" th:href="@{/forbrugere}" style="text-decoration: none">Forbruger</a>
+        <a>Virksomheder</a>
+        <a>Organisationer</a>
+        <a href="/templates/medlemmer.html" class="hlp3" th:href="@{/medlemmer}" style="text-decoration: none">Medlemmer</a>
+        <div id="QA">
+            <a>Om os</a>
+            <a>Kontakt os</a>
+            <a>Q&A</a>
+        </div>
+        <div id="kontakt">
+            <p> Følg os</p>
+            <img src="../static/images/Facebook-logo-blue-circle-large-transparent-png.png"
+                 th:src="@{/images/Facebook-logo-blue-circle-large-transparent-png.png}">
+            <img src="../static/images/twitter-logo.png"
+                 th:src="@{/images/twitter-logo.png}">
+            <img src="../static/images/instagram-logo.png"
+                 th:src="@{/images/instagram-logo.png}">
+        </div>
+    </div>
+</div>
+<div id="frontpages">
+<section class="section" id="page1">
+    <a href="#page2" class="hlp2" th:href="@{#page2}">
+        <div class="box1">
+            <div class="logobox">
+                <img src="../static/images/logo.png" th:src="@{/images/logo.png}" alt="">
+            </div>
+            <h1 id="product-vision">”MADSPILD STÅR FOR SAMLET SET 1,8 MIO. TONS CO2, SVARENDE TIL GODT 3 PCT. AF DANMARKS
+           SAMLEDE CO2-AFTRYK. DET SAMLEDE VÆRDITAB FOR MADSPILD ER PÅ 8,4 MIA. KR. OM ÅRET, HVOR DE 5,3 MIA. KR. ENDER
+           I HUSHOLDNINGENS SKRALDESPAND.”<br><br>"DANMARK MOD MADSPILD ER EN FRIVILLIG AFTALE FOR VIRKSOMHEDER OG
+           ORGANISATIONER, DER HAR SOM MÅL AT HALVERE MADSPILDET INDEN 2030, OG REDUCERE FØDEVARETABET I DEN DANSKE
+           FØDEVAREBRANCHE."<br><br> "INITIATIVET HAR SIT AFSÆT I FN'S VERDENSMÅL 12.3 FOR BÆREDYGTIG UDVIKLING, HVOR DET
+           GLOBALE MADAFFALD, INKL. MADSPILD PR. INDBYGGER SKAL HALVERES INDEN 2030 OG FØDEVARETABET REDUCERES."</h1>
+        </div>
+    </a>
+</section>
+<section class="section" id="page2">
+    <div class="img-container-1">
+        <a href="#page3" class="hlp3" th:href="@{#page3}"><img id="frontimage" src="../static/images/frontpage.png" th:src="@{/images/frontpage.png}" alt="load-page-image"></a>
+        <div class="page-2-text">
+            <h1>Vores frivillige medlemmer bringer ekspertise<br> og know-how til vores kamp mod madspild.</h1>
+        </div>
+    </div>
+</section>
+<section class="section" id="page3">
+    <div class="img-container-2">
+        <div class="img-side-text">
+            <h1 class="side-text-users">Forbrugere</h1>
+            <h1 class="side-text-company">Virksomheder</h1>
+            <h1 class="side-text-org">Organisationer</h1>
+            <h1 class="side-text-members">Medlemmer</h1>
+        </div>
+        <div class="img-box1">
+            <div class="box-img1">
+                <img class="animation" src="../static/images/foodwaste1.jpg" th:src="@{/images/foodwaste1.jpg}" alt="image1">
+            </div>
+            <div class="content1">
+                <h1>Forbrugere</h1>
+                <p>Madspilet i de danske husholdninger udgør <br> 261.000-ton pr. år. <br>
+                    Til sammenligning er det samlede madspild fra servicesektoren 227.000-ton pr. år.</p>
+                <a href="/templates/forbrugere.html" class="hlp3" th:href="@{/forbrugere}" style="text-decoration: none">
+                    <p2><br>Se mere</p2></a>
+            </div>
+        </div>
+        <div class="img-box2">
+            <div class="box-img2">
+                <img class="animation" src="../static/images/foodwaste2.jpg" th:src="@{/images/foodwaste2.jpg}" alt="image2">
+            </div>
+            <div class="content2">
+                <h1>Virksomheder</h1>
+                <p>Det største madspild i servicesektoren stammer fra detailhandelen.<br>Detailhandelen spilder 163.000 tons pr.
+                    år, svarende til 72 % af servicesektorens madspild.</p>
+                <a href="frontpage.html" th:href="@{/}"><p2><br>Se mere</p2></a>
+            </div>
+        </div>
+        <div class="img-box3">
+            <div class="box-img3">
+                <img class="animation" src="../static/images/foodwaste3.jpg" th:src="@{/images/foodwaste3.jpg}" alt="image3">
+            </div>
+            <div class="content3">
+                <h1>Organisationer</h1>
+                <p>Af detailhandelens madspild står specialforretninger for 12.000 tons pr. år,
+                    mens ikke-specialiserede forretninger som kiosker,
+                    købmænd, supermarkeder og varehuse står for 151.000-ton pr. år</p>
+                <a href="frontpage.html" th:href="@{/}"><p2><br>Se mere</p2></a>
+            </div>
+        </div>
+
+        <div class="img-box4">
+            <div class="box-img4">
+                <img class="animation" src="../static/images/foodwaste1.jpg" th:src="@{/images/foodwaste1.jpg}" alt="image4">
+            </div>
+            <div class="content4">
+                <h1>Medlemmer</h1>
+                <p>Hvis du vil være medlem kan du klikke her for at blive linket
+                videre.<br><br> Hvis du har nogen spørgsmål kan du kigge på de andre
+                faner for at finde de svar du søger efter.</p>
+                <a href="/templates/medlemmer.html" class="hlp3" th:href="@{/medlemmer}" style="text-decoration: none"><p2><br>Se mere</p2></a>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="dropdown">
+        <div class="dropdown-content">
+            <a href="#page1" th:href="@{#page1}" style="border-left: solid black"> Produkt Vision</a>
+            <a href="#page2" th:href="@{#page2}"> Medlemsoversigt</a>
+            <a href="#page3" th:href="@{#page3}"> Navigation</a>
+        </div>
+        <img src="../static/images/pngegg.png" id="dropdown-arrow" th:src="@{/images/pngegg.png}"
+             width="20px"
+             height="20px">
+    </div>
+</div>
+</body>
+</html>
